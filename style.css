@@ -1,0 +1,117 @@
+:root{
+    --main-color:#362207; 
+    --alt-color :#fd5641 ; 
+    --back-color:#CCC;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+width: 100%;
+height: 100vh;
+
+}
+body .container{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding:0;
+
+}
+
+
+.coming{
+    width:400px;
+    margin: auto;
+    color:var(--alt-color);
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.coming h2{
+    font-size: 16px;
+    color: #000;
+    letter-spacing: 2px;
+    padding-top: 25px;
+}
+section{
+    display: flex;
+    width: 500px;
+    background-color: var(--back-color);
+    margin: auto;
+    padding: 0  20px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px , rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+}
+section > div{
+    padding: 10px ;
+    color: var(--alt-color);
+    background-color: #FFF;
+    margin: 5px;
+    width: calc(100% / 4);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+section > div h3{
+    color: var(--main-color);
+    margin-bottom: 5px;
+}
+section > div span{
+    font-size:25px;
+}
+.Mo-labib{
+    margin:50px auto;
+    background-color: #FFF;
+    color: #362207;
+    font-weight: 900;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 15px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    text-transform: uppercase;
+}
+.Mo-labib span{
+    color: var(--alt-color);
+    letter-spacing: 2px;
+}
+
+
+@media (max-width:500px) {
+        .coming{
+            width: 100%;
+            text-align: center;
+        } 
+
+       .count-down {
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+        .count-down > div{
+            width: calc(90% / 2);
+        }
+        .count-down > div h3{
+            font-size: 14px;
+        }
+    
+}
